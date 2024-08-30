@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Talladega Pizzas</title>
+</head>
+<body>
+<h1>Talladega Pizza</h1>
+<h2>Pizzaria Delivery</h2>
+<header></header>
+<main>
+<hr>
+<form method="post">
+    <fieldset>
+        <legend>Tamanho e Sabor</legend>
+        <p>Escolha o tamanho da pizza: </p>
+        <select name="role">
+            <option value="">Selecione o tamanho</option>
+            <option value="broto">Martinsville - 1 sabor - 4 fatias (12cm)</option>
+            <option value="pequena">Dover - 2 sabor - 6 fatias (20cm)</option>
+            <option value="media">Darlington - 3 sabores - 8 fatias (30cm)</option>
+            <option value="grande">Charlotte - 3 sabores - 12 fatias (35cm) </option>
+            <option value="grande">Daytona - 4 sabores - 16 fatias (40cm) </option>
+            <option value="familia">Talladega - 5 sabores - 20 fatias (45cm)</option>
+        </select>
+
+        <p>Escolha o sabor da sua pizza:</p>
+
+        <input type="checkbox" name="sabor[]" value="Atum">Atum</input><br>
+        <input type="checkbox" name="sabor[]" value="Brócolis">Brócolis</input><br>
+        <input type="checkbox" name="sabor[]" value="Calabresa">Calabresa</input><br>
+        <input type="checkbox" name="sabor[]" value="Coração">Coração</input><br>
+        <input type="checkbox" name="sabor[]" value="frango">Frango</input><br>
+        <input type="checkbox" name="sabor[]" value="Muzzarela">Muzzarela</input><br>
+        <input type="checkbox" name="sabor[]" value="Napolitana">Napolitana</input><br>
+        <input type="checkbox" name="sabor[]" value="Strognoff">Strgonoff</input><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Borda e Recheio</legend>
+        <p>Borda com recheio?</p>
+        <input type="radio" name="borda" value="sim"> Sim<br>
+        <input type="radio" name="borda" value="não"> Não<br>
+        <p>Recheio</p>
+        <input type="checkbox" name="opcional[]" value="catupiry">Catupiry <br>
+        <input type="checkbox" name="opcional[]" value="catupiry">Cheddar <br>
+    </fieldset>
+    <fieldset>
+        <legend>Bebida:</legend>
+        <input type="radio" name="drink" value="sim"> Água<br>
+        <input type="radio" name="drink" value="sim"> refrigerante<br>
+        <input type="radio" name="drink" value="sim"> Suco <br>
+        <input type="radio" name="drink" value="sim"> Nenhum <br>
+
+
+    </fieldset>
+
+
+    <p>Observações:</p>
+    <label>
+        <textarea name="observation" rows=5 cols= 25 name="message" id="inObservations" placeholder="Escreva aqui suas observações"></textarea>
+    </label>
+    <br>
+    <button type="submit">Enviar pedido</button>
+    <button type="reset">Limpar</button>
+</form>
+<hr>
+</main>
+<footer>Talladega Pizzas - since 1969</footer>
+</body>
+</html>
