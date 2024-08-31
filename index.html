@@ -5,67 +5,94 @@
     <title>Talladega Pizzas</title>
 </head>
 <body>
-<h1>Talladega Pizza</h1>
-<h2>Pizzaria Delivery</h2>
-<header></header>
-<main>
-<hr>
-<form method="post">
-    <fieldset>
-        <legend>Tamanho e Sabor</legend>
-        <p>Escolha o tamanho da pizza: </p>
-        <select name="role">
-            <option value="">Selecione o tamanho</option>
-            <option value="broto">Martinsville - 1 sabor - 4 fatias (12cm)</option>
-            <option value="pequena">Dover - 2 sabor - 6 fatias (20cm)</option>
-            <option value="media">Darlington - 3 sabores - 8 fatias (30cm)</option>
-            <option value="grande">Charlotte - 3 sabores - 12 fatias (35cm) </option>
-            <option value="grande">Daytona - 4 sabores - 16 fatias (40cm) </option>
-            <option value="familia">Talladega - 5 sabores - 20 fatias (45cm)</option>
-        </select>
+    <header class="header">
+        <h1>Talladega Pizza</h1>
+        <h2>Pizzaria Delivery</h2>
+    </header>
+    <main class="main">
+        <hr>
+        <form class="menu" id="pedido" method="post">
+            <fieldset>
+                <legend>Tamanho e Sabor</legend>
+                <h3>Escolha o tamanho da pizza: </h3>
+                <select name="role">
+                    <option value="">Selecione o tamanho</option>
+                    <option value="broto">Martinsville - 1 sabor - 4 fatias (12cm)</option>
+                    <option value="pequena">Dover - 2 sabor - 6 fatias (20cm)</option>
+                    <option value="media">Darlington - 3 sabores - 8 fatias (30cm)</option>
+                    <option value="grande">Charlotte - 3 sabores - 12 fatias (35cm) </option>
+                    <option value="grande">Daytona - 4 sabores - 16 fatias (40cm) </option>
+                    <option value="familia">Talladega - 5 sabores - 20 fatias (45cm)</option>
+                </select>
 
-        <p>Escolha o sabor da sua pizza:</p>
+                <div id="sabores">
+                    <h3>Escolha o sabor da sua pizza:</h3>
+                    <div id="salgadas">
+                        <h4>Salgadas</h4>
+                            <input type="checkbox" name="sabor[]" value="Alho e Oleo">Alho e Óleo</input><br>
+                            <input type="checkbox" name="sabor[]" value="Atum">Atum</input><br>
+                            <input type="checkbox" name="sabor[]" value="Brocolis Bacon">Brócolis com Bacon</input><br>
+                            <input type="checkbox" name="sabor[]" value="Brocolis Catupiry">Brócolis com Catupirỵ̣</input><br>
+                            <input type="checkbox" name="sabor[]" value="Calabrsa">Calbaresa</input><br>
+                            <input type="checkbox" name="sabor[]" value="Calabresa Cheddar">Calabresa e Cheddar</input><br>
+                            <input type="checkbox" name="sabor[]" value="Coracao">Coração</input><br>
+                            <input type="checkbox" name="sabor[]" value="Frango">Frango</input><br>
+                            <input type="checkbox" name="sabor[]" value="Frango Caturipy">Frango com Catupiry</input><br>
+                            <input type="checkbox" name="sabor[]" value="Marguerita">Marguerita</input><br>
+                            <input type="checkbox" name="sabor[]" value="Muzzarela">Muzzarela</input><br>
+                            <input type="checkbox" name="sabor[]" value="Napolitana">Napolitana</input><br>
+                            <input type="checkbox" name="sabor[]" value="Quatro Queijos">Quatro Queijos</input><br>
+                            <input type="checkbox" name="sabor[]" value="Strognoff Carne">Strgonoff de Carne</input><br>
+                            <input type="checkbox" name="sabor[]" value="Strognoff Frango">Strgonoff de Frango</input><br>
+                            <input type="checkbox" name="sabor[]" value="Vegetariana">Vegetariana</input><br>
+                    </div>
+                    <div id="doces">
+                        <h4>Doces</h4>
+                        <input type="checkbox" name="sabor[]" value="Chocolate">Chocolate</input><br>
+                        <input type="checkbox" name="sabor[]" value="Chocolate Branco">Chocolate Branco</input><br>
+                        <input type="checkbox" name="sabor[]" value="Chocolate Morango">Chocolate com Morango</input><br>
+                        <input type="checkbox" name="sabor[]" value="Prestigio">Prestígio</input><br>
+                        <input type="checkbox" name="sabor[]" value="Chocolate Branco Morango">Chocolate Branco com Morango</input><br>
+                        <input type="checkbox" name="sabor[]" value="M&M`s">M&M's</input><br>
+                        <input type="checkbox" name="sabor[]" value="Doce de Leite">Doce de Leite</input><br>
 
-        <input type="checkbox" name="sabor[]" value="Atum">Atum</input><br>
-        <input type="checkbox" name="sabor[]" value="Brócolis">Brócolis</input><br>
-        <input type="checkbox" name="sabor[]" value="Calabresa">Calabresa</input><br>
-        <input type="checkbox" name="sabor[]" value="Coração">Coração</input><br>
-        <input type="checkbox" name="sabor[]" value="frango">Frango</input><br>
-        <input type="checkbox" name="sabor[]" value="Muzzarela">Muzzarela</input><br>
-        <input type="checkbox" name="sabor[]" value="Napolitana">Napolitana</input><br>
-        <input type="checkbox" name="sabor[]" value="Strognoff">Strgonoff</input><br>
-    </fieldset>
-
-    <fieldset>
-        <legend>Borda e Recheio</legend>
-        <p>Borda com recheio?</p>
-        <input type="radio" name="borda" value="sim"> Sim<br>
-        <input type="radio" name="borda" value="não"> Não<br>
-        <p>Recheio</p>
-        <input type="checkbox" name="opcional[]" value="catupiry">Catupiry <br>
-        <input type="checkbox" name="opcional[]" value="catupiry">Cheddar <br>
-    </fieldset>
-    <fieldset>
-        <legend>Bebida:</legend>
-        <input type="radio" name="drink" value="sim"> Água<br>
-        <input type="radio" name="drink" value="sim"> refrigerante<br>
-        <input type="radio" name="drink" value="sim"> Suco <br>
-        <input type="radio" name="drink" value="sim"> Nenhum <br>
-
-
-    </fieldset>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Borda e Recheio</legend>
+                <p>Borda com recheio?</p>
+                <input type="radio" name="borda" value="sim"> Sim<br>
+                <input type="radio" name="borda" value="não"> Não<br>
+                <p>Recheio</p>
+                <input type="checkbox" name="opcional[]" value="catupiry">Catupiry <br>
+                <input type="checkbox" name="opcional[]" value="catupiry">Cheddar <br>
+            </fieldset>
+            <fieldset>
+                <legend>Bebida:</legend>
+                <input type="radio" name="drink" value="sim"> Água<br>
+                <input type="radio" name="drink" value="sim"> Água com gás<br>
+                <input type="radio" name="drink" value="sim"> Pepsi 2L<br>
+                <input type="radio" name="drink" value="sim"> Pepsi 600mL<br>
+                <input type="radio" name="drink" value="sim"> Fanta 2L<br>
+                <input type="radio" name="drink" value="sim"> Guaraná 2L<br>
+                <input type="radio" name="drink" value="sim"> Guaraná 600mL<br>
+                <input type="radio" name="drink" value="sim"> Suco de Uva<br>
+                <input type="radio" name="drink" value="sim"> Suco de Laranja<br>
+                <input type="radio" name="drink" value="sim"> Nenhum <br>
+            </fieldset>
 
 
-    <p>Observações:</p>
-    <label>
-        <textarea name="observation" rows=5 cols= 25 name="message" id="inObservations" placeholder="Escreva aqui suas observações"></textarea>
-    </label>
-    <br>
-    <button type="submit">Enviar pedido</button>
-    <button type="reset">Limpar</button>
-</form>
-<hr>
-</main>
-<footer>Talladega Pizzas - since 1969</footer>
-</body>
+            <p>Observações:</p>
+            <label>
+                <textarea name="observation" rows=5 cols= 30 name="message" id="inObservations" placeholder="Escreva aqui suas observações"></textarea>
+            </label>
+            <br>
+            <button type="submit">Enviar pedido</button>
+            <button type="reset">Limpar</button>
+        </form>
+        <hr>
+    </main>
+        <footer class="footer">Talladega Pizzas - since 1969</footer>
+    </body>
 </html>
