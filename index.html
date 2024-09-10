@@ -2,12 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>Talladega Pizzas</title>
 </head>
 <body>
 
-    <header class="header-container">
+    <header class="header-container border-class">
         <img src="img/logo001trans.png">
         <div class="header-main">
             <h1 class="header-title">Talladega Pizzas</h1>
@@ -77,12 +78,17 @@
             </section>
             <section class="border-pizza main-border">
                 <legend>Borda e Recheio</legend>
-                <p>Borda com recheio?</p>
-                <input type="radio" name="borda" value="sim"> Sim<br>
-                <input type="radio" name="borda" value="não"> Não<br>
-                <p>Recheio</p>
-                <input type="checkbox" name="opcional[]" value="catupiry">Catupiry <br>
-                <input type="checkbox" name="opcional[]" value="catupiry">Cheddar <br>
+                <div>
+                    <legend>Borda com recheio?</legend>
+                    <input type="radio" name="borda" value="sim"> Sim<br>
+                    <input type="radio" name="borda" value="não"> Não<br>
+                </div>
+                <br>
+                <div>
+                    <legend>Recheio</legend>
+                    <input type="radio" name="opcional" value="catupiry">Catupiry <br>
+                    <input type="radio" name="opcional" value="catupiry">Cheddar <br>
+                </div>
             </section>
             <section class="drink-choice main-border">
                 <legend>Bebida:</legend>
@@ -105,14 +111,14 @@
                 </label>
 
                 <br>
-                <button type="submit">Enviar pedido</button>
-                <button type="reset">Limpar</button>
+                <button class="btn btn-primary" type="submit">Enviar pedido</button>
+                <button class="btn btn-danger" type="reset">Limpar</button>
             </section>
           </form>
 </section>
     </main>
     <hr>
-    <footer class="footer-container">
+    <footer class="footer-container border-class">
 
       <h3>Talladega Pizzas - since 1969</h3>
 
