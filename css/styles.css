@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header-container{
+    background-color: #0c1015;
+    display: flex;
+    height: 110px;
+    width: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header-main{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Tilt Neon", cursive;
+    width: 80%;
+
+}
+.header-title{
+    text-transform: uppercase;
+    color: #fefef0;
+    font-size: 50px;
+    text-shadow: #0f0f0f 4px 3px 3px;
+
+}
+.header-subtitle{
+    color: #fefef0;
+    font-size: 16px;
+    text-shadow: #0f0f0f 1px 1px 1px;
+
+}
