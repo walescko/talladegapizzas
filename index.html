@@ -23,12 +23,13 @@
 
 
     </header>
-
+    <hr>
     <main class="main-container">
-        <hr>
+<section class="option-pizza">
+
         <form class="menu" id="pedido" method="post">
-            <fieldset>
-                <legend>Tamanho e Sabor</legend>
+            <section class="size-flavour main-border">
+                <legend id="size-flavour">Tamanho e Sabor</legend>
                 <h3>Escolha o tamanho da pizza: </h3>
                 <select name="role">
                     <option value="">Selecione o tamanho</option>
@@ -40,7 +41,7 @@
                     <option value="familia">Talladega - 5 sabores - 20 fatias (45cm)</option>
                 </select>
 
-                <div id="sabores">
+                <section id="sabores">
                     <h3>Escolha o sabor da sua pizza:</h3>
                     <div id="salgadas">
                         <h4>Salgadas</h4>
@@ -72,9 +73,9 @@
                         <input type="checkbox" name="sabor[]" value="Doce de Leite">Doce de Leite</input><br>
 
                     </div>
-                </div>
-            </fieldset>
-            <fieldset>
+                </section>
+            </section>
+            <section class="border-pizza main-border">
                 <legend>Borda e Recheio</legend>
                 <p>Borda com recheio?</p>
                 <input type="radio" name="borda" value="sim"> Sim<br>
@@ -82,8 +83,8 @@
                 <p>Recheio</p>
                 <input type="checkbox" name="opcional[]" value="catupiry">Catupiry <br>
                 <input type="checkbox" name="opcional[]" value="catupiry">Cheddar <br>
-            </fieldset>
-            <fieldset>
+            </section>
+            <section class="drink-choice main-border">
                 <legend>Bebida:</legend>
                 <input type="radio" name="drink" value="sim"> Água<br>
                 <input type="radio" name="drink" value="sim"> Água com gás<br>
@@ -95,19 +96,27 @@
                 <input type="radio" name="drink" value="sim"> Suco de Uva<br>
                 <input type="radio" name="drink" value="sim"> Suco de Laranja<br>
                 <input type="radio" name="drink" value="sim"> Nenhum <br>
-            </fieldset>
+            </section>
 
+            <section class="main-border-obs">
+                <p>Observações:</p>
+                <label>
+                    <textarea class="textarea-border" name="observation" rows=5 cols= 30 name="message" id="inObservations" placeholder="Escreva aqui suas observações"></textarea>
+                </label>
 
-            <p>Observações:</p>
-            <label>
-                <textarea name="observation" rows=5 cols= 30 name="message" id="inObservations" placeholder="Escreva aqui suas observações"></textarea>
-            </label>
-            <br>
-            <button type="submit">Enviar pedido</button>
-            <button type="reset">Limpar</button>
-        </form>
-        <hr>
+                <br>
+                <button type="submit">Enviar pedido</button>
+                <button type="reset">Limpar</button>
+            </section>
+          </form>
+</section>
     </main>
-        <footer class="footer">Talladega Pizzas - since 1969</footer>
+    <hr>
+    <footer class="footer-container">
+
+      <h3>Talladega Pizzas - since 1969</h3>
+
+    </footer>
+
     </body>
 </html>
