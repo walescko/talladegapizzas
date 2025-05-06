@@ -1,6 +1,7 @@
 // carregaDocumento("cabecalho.html", "#mainheader");
 carregaDocumento('../header.html', "#mainheader");
 
+
 function carregaDocumento(arquivo, target)
 {
     let el = document.querySelector(target);
