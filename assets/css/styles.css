@@ -33,14 +33,14 @@ body{
 .header-title{
     text-transform: uppercase;
     font-size: 50px;
-    text-shadow: #0f0f0f 4px 3px 3px;
+    text-shadow: #0f0f0f 3px 2px 2px;
 }
 .header-subtitle{
     font-size: 16px;
     text-shadow: #0f0f0f 1px 1px 1px;
 }
 .header-font-color{
-    color: #83a337;
+    color: #e45023;
 }
 
 .header-contact{
